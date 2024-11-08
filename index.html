@@ -6,32 +6,41 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
   <title>Frontend Mentor | Article preview component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="card">
-    <div class="card-image">
-      <img src="/images/drawers.jpg" alt="Furniture Image">
-    </div>
-    <div class="card-content">
-      <h2>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
-      <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
-      <div class="card-footer">
-        <div class="author">
-          <img src="/images/avatar-michelle.jpg" alt="Author">
-          <span>Michelle Appleton</span>
-          <span>28 Jun 2020</span>
+  <section class="container">
+    <div class="card">
+      <div class="card-image">
+        <img src="/images/drawers.jpg" alt="Furniture Image">
+      </div>
+      <div class="card-content">
+        <h2>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+        <p>Ever been in a room and felt like <br> something was missing? Perhaps it felt <br> slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
+        <div class="card-footer">
+          <div class="author">
+            <img src="/images/avatar-michelle.jpg" alt="Author">
+            <div class="bio">
+              <span class="name">Michelle Appleton</span><br>
+              <span class="date">28 Jun 2020</span>
+            </div>
+            
+          </div>
+          <button class="share-btn" onclick="toggleShare()"><img src="/images/icon-share.svg" alt="share"></button>
         </div>
-        <button class="share-btn" onclick="toggleShare()"><img src="/images/icon-share.svg" alt="share"></button>
+      </div>
+      <div class="share-options" id="shareOptions">
+        <span>SHARE</span>
+        <a href="#"><img src="/images/icon-facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="/images/icon-twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="/images/icon-pinterest.svg" alt="Pinterest"></a>
       </div>
     </div>
-    <div class="share-options" id="shareOptions">
-      <span>SHARE</span>
-      <a href="#"><img src="/images/icon-facebook.svg" alt="Facebook"></a>
-      <a href="#"><img src="/images/icon-twitter.svg" alt="Twitter"></a>
-      <a href="#"><img src="/images/icon-pinterest.svg" alt="Pinterest"></a>
-    </div>
-  </div>
+  </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Sherzod</a>.

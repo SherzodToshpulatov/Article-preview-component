@@ -17,12 +17,12 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [live site here](https://your-live-site-url.com)
+- Live Site URL: [live site here](https://article-preview-component-one-bay.vercel.app/)
 
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML
+- CSS
 - Flexbox
-- CSS Grid
+- JS
